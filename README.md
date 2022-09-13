@@ -15,8 +15,9 @@ Read official Documentation https://github.com/supabase/gotrue/
 - On .env file specify SMTP-related config, required to make Gotrue running.
 - Set `GOTRUE_SMS_CUSTOM_URL` to http://localhost:3000/send.
 - Set `GOTRUE_SMS_CUSTOM_SECRET` to "supersecret".
+- Run database `docker-compose -f docker-compose-dev.yml up postgres -d`
 - `make build`
-- `./gotrue`
+- Run Gotrue `./gotrue` or if you'd like to run on development mode use [`air`](https://github.com/cosmtrek/air)
 
 #### Setup custom endpoint to work
 This repository's purpose is to demonstrate the simple PoC to handle Custom Auth Provider from [my fork](https://github.com/novanda1/gotrue) on [this commit](https://github.com/novanda1/gotrue/commit/7c2f76bf84a45e98c4f5ff9caf87bc6f5c2cd55b).
